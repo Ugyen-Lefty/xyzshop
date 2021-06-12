@@ -1,0 +1,48 @@
+<!-- sidebar -->
+<div class="sidebar py-5 my-5">
+  <a href="users/">Dashboard</a>
+  <hr>
+  <a href="users/add-user">Add User</a>
+  <hr>
+  <a href="users/update-user">Edit User</a>
+  <hr>
+  <a href="users/delete-user">Delete User</a>
+  <hr>
+  <a href="products/add-product">Add Products</a>
+  <hr>
+  <a class="active" href="products/updateproduct-page">Edit Products</a>
+  <hr>
+  <a href="products/deleteproduct-page">Delete Products</a>
+</div>
+
+<div class="content">
+
+<form (submit)="updateProduct(updateProductForm)" #updateProductForm="ngForm">
+    <div class="container">
+      <h2>Update Product</h2>
+      <hr class="mb-5">
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="pname" placeholder="A" name="productName" [(ngModel)]="productDetails.productName">
+            <label for="pname">Product Name</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="desc" placeholder="A" name="description" [(ngModel)]="productDetails.description">
+            <label for="desc">Description</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="price" placeholder="A" name="price" [(ngModel)]="productDetails.price">
+            <label for="price">Price</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="stock" placeholder="A" name="stock" [(ngModel)]="productDetails.stock">
+            <label for="stock">Stock</label>
+          </div>
+          <div class="mb-3">
+            <label for="pimg" class="form-label">Product Image</label>
+            <input class="form-control" type="file" id="pimg" placeholder="img" name="product_img" [(ngModel)]="productDetails.product_img">
+          </div>
+          <button class="my-3 btn btn-primary" type="submit">Submit</button>
+        </div>
+      
+    </form>
+    </div>

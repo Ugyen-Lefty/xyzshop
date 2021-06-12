@@ -1,0 +1,28 @@
+<div class="content">
+    <div class="container">
+      <h1 style="padding-top: 5%;" class="text-center">Cart</h1>
+      <hr>
+      <table class="table">
+              <thead class="thead-dark">
+                <tr>
+                  <th scope="col">SL</th>
+                  <th scope="col">Item Name</th>
+                  <th scope="col">Quantity</th>
+                  <th scope="col">Action</th>
+                </tr>
+              </thead>
+              <tbody *ngFor="let cart of cartList">
+                <tr *ngIf="cart.length != 0">
+                  <td>{{ cart.id }}</td>
+                  <td>{{ cart.itemName }}</td>
+                  <td>{{ cart.quantity }}</td>
+                  <td><a href="cart/delete-from-cart/{{ cart.id }}"><img src="assets/delete.png"> Delete</a></td>
+                </tr>
+                <!-- <tr *ngIf="cart.length == 0">
+                  <td colspan="4">Your Cart is Empty</td>
+                </tr> -->
+              </tbody>
+              <a class="btn btn-primary my-5" href="cart/checkout">Checkout</a>
+            </table>
+      </div>
+  </div>

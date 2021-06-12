@@ -1,0 +1,41 @@
+<!-- sidebar -->
+<div class="sidebar py-5 my-5">
+    <a href="users/">Dashboard</a>
+    <hr>
+    <a class="active" href="users/add-user">Add User</a>
+    <hr>
+    <a href="users/update-user">Edit User</a>
+    <hr>
+    <a href="users/delete-user">Delete User</a>
+    <hr>
+    <a href="products/add-product">Add Products</a>
+    <hr>
+    <a href="products/updateproduct-page">Edit Products</a>
+    <hr>
+    <a href="products/deleteproduct-page">Delete Products</a>
+</div>
+  <div class="content mb-5">
+  <form (submit)="addNewUser(addUserForm)" #addUserForm="ngForm">
+  <div class="container">
+    <h2>Add new User</h2>
+    <hr class="mb-4">
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="userName" required placeholder="A" name="userName" ngModel>
+          <label for="userName">User Name</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="password" required placeholder="A" name="password" ngModel>
+          <label for="password">Password</label>
+        </div>
+        <div class="mb-3">
+            <h4>Role</h4>
+        </div>
+            <select id="role" name="role" required class="form-control p-3" ngModel>
+                <option value="Admin" ngModel>Admin</option>
+                <option value="User" ngModel>User</option>
+            </select>
+        <button class="my-3 btn btn-primary" type="submit">Submit</button>
+      </div>
+    
+  </form>
+  </div>

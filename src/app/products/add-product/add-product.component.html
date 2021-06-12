@@ -1,0 +1,47 @@
+<!-- sidebar -->
+<div class="sidebar py-5 my-5">
+  <a href="users/">Dashboard</a>
+  <hr>
+  <a href="users/add-user">Add User</a>
+  <hr>
+  <a href="users/update-user">Edit User</a>
+  <hr>
+  <a href="users/delete-user">Delete User</a>
+  <hr>
+  <a class="active" href="products/add-product">Add Products</a>
+  <hr>
+  <a href="products/updateproduct-page">Edit Products</a>
+  <hr>
+  <a href="products/deleteproduct-page">Delete Products</a>
+</div>
+
+<div class="content mb-5">
+<form (submit)="addNewProduct(addProductForm)" #addProductForm="ngForm">
+<div class="container">
+  <h2>Add new Product</h2>
+  <hr class="mb-4">
+      <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="pname" placeholder="A" name="productName" ngModel>
+        <label for="pname">Product Name</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="desc" placeholder="A" name="description" ngModel>
+        <label for="desc">Description</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="price" placeholder="A" name="price" ngModel>
+        <label for="price">Price</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="stock" placeholder="A" name="stock" ngModel>
+        <label for="stock">Stock</label>
+      </div>
+      <div class="mb-3">
+        <label for="pimg" class="form-label">Product Image</label>
+        <input class="form-control" type="file" id="pimg" value="assets/s6.jpg" placeholder="img" name="product_img" ngModel>
+      </div>
+      <button class="my-3 btn btn-primary" type="submit">Submit</button>
+    </div>
+  
+</form>
+</div>

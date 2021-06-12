@@ -1,0 +1,41 @@
+<!-- sidebar -->
+<div class="sidebar py-5 my-5">
+  <a class="active" href="users/">Dashboard</a>
+  <hr>
+  <a href="users/add-user">Add User</a>
+  <hr>
+  <a href="users/update-user">Edit User</a>
+  <hr>
+  <a href="users/delete-user">Delete User</a>
+  <hr>
+  <a href="products/add-product">Add Products</a>
+  <hr>
+  <a href="products/updateproduct-page">Edit Products</a>
+  <hr>
+  <a href="products/deleteproduct-page">Delete Products</a>
+</div>
+
+<div class="content">
+  <div class="container">
+    <h1 style="padding-top: 10%;">Users Details</h1>
+    <hr>
+    <table class="table">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">User Name</th>
+                <th scope="col">Password</th>
+                <th scope="col">Role</th>
+              </tr>
+            </thead>
+            <tbody *ngFor="let users of userList">
+              <tr *ngIf="users.id!=0">
+                <th scope="row">{{ users.id }}</th>
+                <td>{{ users.userName }}</td>
+                <td>{{ users.password }}</td>
+                <td>{{ users.role }}</td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+</div>

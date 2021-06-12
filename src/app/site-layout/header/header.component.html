@@ -1,0 +1,42 @@
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+<!-- Navigation-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container px-4 px-lg-5">
+        <a class="navbar-brand mr-5" href="">XYZ</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0 ms-lg-4">
+                <li class="nav-item mx-4"><a class="nav-link active" aria-current="page" href="">Home</a></li>
+                <li class="nav-item mx-4"><a class="nav-link active" aria-current="page" href="products/">Products</a></li>
+                <li class="nav-item mx-5 dropdown">
+                    <a class="nav-link dropdown-toggle nav-link active" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Filter By Price</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="products/filter-by-price/1">Below Nu 1,000</a></li>
+                        <li><hr class="dropdown-divider" /></li>
+                        <li><a class="dropdown-item" href="products/filter-by-price/2">Nu 1,000 - Nu 5,000</a></li>
+                        <li><hr class="dropdown-divider" /></li>
+                        <li><a class="dropdown-item" href="products/filter-by-price/3">Nu 5,000 - Nu 10,000</a></li>
+                        <li><hr class="dropdown-divider" /></li>
+                        <li><a class="dropdown-item" href="products/filter-by-price/4">Nu 10,000 +</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="d-flex">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                    <li class="nav-item mx-5">
+                        <a *ngIf="zero0 == false" class="nav-link nav-link active" href="users/login"><img src="assets/log-in.png" style="padding-right: 5px;">Login</a>
+                        <a *ngIf="zero0 == true" class="nav-link nav-link active" href="users/login" (click) = "logout();"><img src="assets/log-in.png" style="padding-right: 5px;">Logout</a>
+                    </li>
+                    <li class="nav-item mx-5"><a class="nav-link nav-link active" href="users/signup"><img src="assets/signup.png" style="padding-right: 5px;">Sign Up</a></li>
+                </ul>
+                <a class="btn btn-light btn-outline-dark" href="cart">
+                    <img src="assets/shopping-cart.png">
+                    Cart
+                    <span class="badge bg-light text-dark ms-1 rounded-pill">{{ cartList.length }}</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>

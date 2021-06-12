@@ -1,0 +1,39 @@
+form {
+  margin: 7%;
+}
+.sidebar {
+  margin: 0px;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
+  overflow: unset;
+  height: 100%;
+  max-height: calc(100vh - 9rem);
+  overflow-y: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.sidebar a.active {
+  background-color: #555;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+}
+
+table {
+  margin: 13% 0;
+}

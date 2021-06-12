@@ -1,0 +1,131 @@
+{
+  "products": [
+    {
+      "productName": "Air Jordan 1",
+      "description": "Micheal jordans first shoe that is now more of a fashion statement.",
+      "price": 15000,
+      "stock": "10",
+      "is_available": true,
+      "product_img": "http://localhost:4200/assets/s5.jpg",
+      "id": 1
+    },
+    {
+      "productName": "Nike",
+      "description": "A comfortable shoe that you can wear for almost anything.",
+      "price": 700,
+      "stock": "1",
+      "is_available": true,
+      "product_img": "http://localhost:4200/assets/s2.jpg",
+      "id": 2
+    },
+    {
+      "productName": "Vans",
+      "description": "A comfortable shoe that you can wear for almost anything.",
+      "price": 2500,
+      "stock": "0",
+      "is_available": true,
+      "product_img": "http://localhost:4200/assets/s3.jpg",
+      "id": 3
+    },
+    {
+      "productName": "Puma",
+      "description": "A comfortable shoe that you can wear for almost anything.",
+      "price": 6000,
+      "stock": "30",
+      "is_available": true,
+      "product_img": "http://localhost:4200/assets/s4.jpg",
+      "id": 4
+    },
+    {
+      "productName": "Adidas",
+      "description": "A comfortable shoe that you can wear for almost anything.",
+      "price": "12000",
+      "stock": "10",
+      "is_available": true,
+      "product_img": "http://localhost:4200/assets/s1.jpg",
+      "id": 5
+    },
+    {
+      "productName": "Nike Air force 1",
+      "description": "A comfortable shoe that you can wear for almost anything.",
+      "price": "3000",
+      "stock": "10",
+      "is_available": true,
+      "product_img": "http://localhost:4200/assets/s7.jpg",
+      "id": 6
+    },
+    {
+      "productName": "Fila Fitness",
+      "description": "A comfortable shoe that you can wear for almost anything.",
+      "price": "1200",
+      "stock": "10",
+      "is_available": true,
+      "product_img": "http://localhost:4200/assets/s8.jpg",
+      "id": 7
+    },
+    {
+      "productName": "Reebok",
+      "description": "A comfortable shoe that you can wear for almost anything.",
+      "price": "8000",
+      "stock": "10",
+      "is_available": true,
+      "product_img": "http://localhost:4200/assets/s9.jpg",
+      "id": 8
+    },
+    {
+      "productName": "Nike Air Zoom",
+      "description": "A comfortable shoe that you can wear for almost anything.",
+      "price": "5000",
+      "stock": "10",
+      "is_available": true,
+      "product_img": "http://localhost:4200/assets/s10.jpg",
+      "id": 9
+    },
+    {
+      "productName": "Nike Lebron XVII",
+      "description": "A comfortable shoe that you can wear for almost anything.",
+      "price": "20000",
+      "stock": "10",
+      "is_available": true,
+      "product_img": "http://localhost:4200/assets/s11.jpg",
+      "id": 10
+    },
+    {
+      "productName": "Puma G-Tag",
+      "description": "A comfortable shoe that you can wear for almost anything.",
+      "price": "999",
+      "stock": "10",
+      "is_available": true,
+      "product_img": "http://localhost:4200/assets/s12.jpg",
+      "id": 11
+    }
+  ],
+  "users": [
+    {
+      "loggedIn": false,
+      "id": 0
+    },
+    {
+      "userName": "admin",
+      "password": "admin",
+      "loggedIn": false,
+      "role": "User",
+      "id": 1
+    },
+    {
+      "userName": "ugyen",
+      "password": "ugyen",
+      "loggedIn": false,
+      "role": "User",
+      "id": 2
+    },
+    {
+      "id": 3,
+      "userName": "deki",
+      "password": "deki",
+      "loggedIn": false,
+      "role": "user"
+    }
+  ],
+  "cart": []
+}
